@@ -17,3 +17,8 @@ jobs:
                 exit 1
             - name: checking
               run : echo " its working "
+    echo-test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: say hello
+              run: echo " test"
