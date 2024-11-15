@@ -7,13 +7,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: say hello
-              run: echo" hello world"
+              run: echo " hello world"
     echo-bye:
         runs-on: ubuntu-latest
         steps:
             - name: say bye
               run: |
                 echo " hello bye"
-                echo exit 1
+                exit 1
             - name: checking
               run : echo " its working "
