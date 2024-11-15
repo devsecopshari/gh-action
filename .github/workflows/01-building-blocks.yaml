@@ -14,7 +14,7 @@ jobs:
             - name: say bye
               run: |
                 echo " hello bye"
-                exit 1
+                exit 0
             - name: checking
               run : echo " its working "
     echo-test:
