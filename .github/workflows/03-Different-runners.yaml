@@ -1,11 +1,30 @@
 name: 03- runners
 
-on: push
+on: workflow_dispatch
 
 jobs: 
     ubuntu-runner:
         runs-on: ubuntu-latest
         steps:
             - name: displaying the os
-              run: echo "hello"
+              run: |
+               echo "hello"
+               echo "$RUNNER_OS"
+               ubuntu-runner:
+    Window-runner:
+        runs-on: WINDOW-latest
+        steps:
+            - name: displaying the os
+              shell: bash
+              run: |
+               echo "hello"
+               echo "$RUNNER_OS"
+               ubuntu-runner:
+    macos-runner:
+        runs-on: MACOS-latest
+        steps:
+            - name: displaying the os
+              run: |
+               echo "hello"
+               echo "$RUNNER_OS"
 
