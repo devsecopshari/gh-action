@@ -1,0 +1,10 @@
+name: runners
+
+on: push
+
+jobs: 
+    ubuntu-runner:
+        runs-on: ubuntu latest
+        steps:
+            - run: echo "hello"
+
