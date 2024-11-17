@@ -10,9 +10,9 @@ jobs:
               run: |
                echo "hello"
                echo "$RUNNER_OS"
-               ubuntu-runner:
+
     Window-runner:
-        runs-on: WINDOW-latest
+        runs-on: window-latest
         steps:
             - name: displaying the os
               shell: bash
