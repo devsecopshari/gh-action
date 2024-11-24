@@ -4,7 +4,7 @@ on: push
 
 jobs:
   echo-hello:
-      runs-on: ubuntu_latest
+      runs-on: ubuntu-latest
       steps:
         - name: Say hello
           run : echo "hello world"
@@ -12,6 +12,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: i will fail
-          run: exit 1
+          run: exit 0
         - name: say bye
           run: echo " good bye"
