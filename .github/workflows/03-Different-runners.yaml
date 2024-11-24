@@ -12,7 +12,7 @@ jobs:
                echo "$RUNNER_OS"
 
     Window-runner:
-        runs-on: window-latest
+        runs-on: windows-latest
         steps:
             - name: displaying the os
               shell: bash
