@@ -1,0 +1,15 @@
+name: 04-using-actions
+on: 
+    pull_request:
+        types:
+            - opened
+            - synchronize
+        branches:
+            - main
+
+jobs:
+    builds:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checking the pull request
+              run: echo "when the PR is opened or sync"
