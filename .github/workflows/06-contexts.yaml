@@ -1,10 +1,10 @@
 name: 06-contexts
-run-name: 06 - contexts | DEBUg - ${{ inputs.debug }}
+run-name: 06 - contexts | DEBUG - ${{ inputs.debugs }}
 on: 
      push:
      workflow_dispatch:
       inputs:
-        debug:
+        debugs:
           type: boolean
           default: false
 
