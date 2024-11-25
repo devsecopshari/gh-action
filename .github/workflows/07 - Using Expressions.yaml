@@ -1,0 +1,17 @@
+name: 07 - Using Expressions
+on: 
+    push:
+    workflow_dispatch:
+        inputs:
+            debug:
+                type: boolean
+                default: false
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: debug Print start-up data
+              run: |
+               if ${{inputs.debug && true}}
+               echo "sucess"
+
