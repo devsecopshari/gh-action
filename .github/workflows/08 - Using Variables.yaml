@@ -1,5 +1,5 @@
 name: 08 - Using Variables
-on: push
+on: workflow_dispatch
 env:
     WORKFLOW_VAR: I-AM-IN-WORKFLOW
     OVERWRITTEN: I WILL BE OVERWIRRTEN in workflow
@@ -32,3 +32,10 @@ jobs:
               run: |
                 echo "Step env var: $STEP_VAR" 
                 echo "Step env var: $vars.MY_VAR"             
+    echo-prod:
+        runs-on: ubuntu-latest
+        environment: prod
+        steps:
+            - name: print prod var
+              run: |
+               echo " i am printing prod ${{vars.OVERWIRRTEN_VAR}}"
