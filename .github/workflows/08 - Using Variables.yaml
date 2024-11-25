@@ -31,4 +31,4 @@ jobs:
                 STEP_VAR2: i am in step2 var  overwritten
               run: |
                 echo "Step env var: $STEP_VAR" 
-                echo "Step env var: $MY_VAR"             
+                echo "Step env var: $vars.MY_VAR"             
